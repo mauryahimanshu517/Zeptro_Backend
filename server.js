@@ -5,9 +5,14 @@ import cors from "cors";
 const app = express();
 
 // ✅ Allow your local frontend
-app.use(cors({
-  origin: "http://localhost:5173",
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://your-netlify-site.netlify.app", // replace with your actual Netlify URL
+    ],
+  })
+);
 
 app.use(express.json());
 
