@@ -34,4 +34,8 @@ app.post("/cart", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("✅ Backend is running successfully!");
+});
+
 app.listen(5000, () => console.log("✅ Backend running on port 5000"));
