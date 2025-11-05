@@ -9,7 +9,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://your-netlify-site.netlify.app", // replace with your actual Netlify URL
+      "https://zeptroapp.netlify.app", // replace with your actual Netlify URL
     ],
   })
 );
